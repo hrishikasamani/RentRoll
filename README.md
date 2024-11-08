@@ -66,4 +66,4 @@ Further notes -
 
 Create a .env file in server and client to store secret keys and strings
 
-Live Demo - https://master--fancy-malabi-9c648b.netlify.app
+Live Demo - https://rent-and-roll.netlify.app/
