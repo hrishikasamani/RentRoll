@@ -1,13 +1,13 @@
 import axios from "axios";
 import { message } from "antd";
-const API_BASE_URL = process.env.REACT_API_BASE_URL;
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 export const bookCar = (reqObj) => async (dispatch) => {
   dispatch({ type: "LOADING", payload: true });
 
   try {
     console.log(reqObj);
     await axios.post(
-      `${API_BASE_URL}api/bookings/bookcar`,
+      `${API_BASE_URL}/api/bookings/bookcar`,
       reqObj
     );
 
@@ -28,7 +28,7 @@ export const getAllBookings = () => async (dispatch) => {
 
   try {
     const response = await axios.get(
-      `${API_BASE_URL}api/bookings/getallbookings`
+      `${API_BASE_URL}/api/bookings/getallbookings`
     );
     dispatch({ type: "GET_ALL_BOOKINGS", payload: response.data });
     dispatch({ type: "LOADING", payload: false });
