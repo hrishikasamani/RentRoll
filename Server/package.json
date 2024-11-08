@@ -16,15 +16,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/meetgandhii/Rent-Roll.git"
+    "url": "git+https://github.com/hrishikasamani/RentRoll.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/meetgandhii/Rent-Roll/issues"
+    "url": "https://github.com/hrishikasamani/RentRoll/issues"
   },
-  "homepage": "https://github.com/meetgandhii/Rent-Roll/blob/master/README.md",
+  "homepage": "https://github.com/hrishikasamani/RentRoll/blob/main/README.md",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",

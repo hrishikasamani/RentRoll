@@ -90,7 +90,7 @@ function Profile() {
   };
  
   const profileContainerStyle = {
-    maxWidth: "600px",
+    width: "500px",
     margin: "auto",
     padding: "20px",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",

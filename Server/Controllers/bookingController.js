@@ -11,9 +11,8 @@ exports.bookCar = async (req, res) => {
       id: uuidv4(),
       source: { id: "fake_card_id" }, // Mocked card ID
     };
-
+    
     const payment = fakePaymentResponse;
-
     if (payment) {
       req.body.transactionId = payment.source.id;
       req.body.token = payment.id;
@@ -21,6 +20,7 @@ exports.bookCar = async (req, res) => {
       const newBooking = new Booking(req.body);
       await newBooking.save();
       const mongoose = require('mongoose');
+      console.log(req.body)
       const car = await Car.findOne({ _id: req.body.car });
       if (car) {
         car.bookedTimeSlots.push(req.body.bookedTimeSlots);
