@@ -6,7 +6,7 @@ export const getAllCars = () => async (dispatch) => {
 
   try {
     const response = await axios.get(
-      `${API_BASE_URL}/api/cars/getallcars`
+      `${API_BASE_URL}api/cars/getallcars`
     );
     dispatch({ type: "GET_ALL_CARS", payload: response.data });
     dispatch({ type: "LOADING", payload: false });
@@ -21,7 +21,7 @@ export const addCar = (reqObj) => async (dispatch) => {
 
   try {
     await axios.post(
-      `${API_BASE_URL}/api/cars/addcar`,
+      `${API_BASE_URL}api/cars/addcar`,
       reqObj
     );
 
@@ -41,7 +41,7 @@ export const editCar = (reqObj) => async (dispatch) => {
 
   try {
     await axios.put(
-      `${API_BASE_URL}/api/cars/editcar`,
+      `${API_BASE_URL}api/cars/editcar`,
       reqObj
     );
 
@@ -61,7 +61,7 @@ export const deleteCar = (reqObj) => async (dispatch) => {
 
   try {
     await axios.post(
-      `${API_BASE_URL}/api/cars/deletecar`,
+      `${API_BASE_URL}api/cars/deletecar`,
       reqObj
     );
 

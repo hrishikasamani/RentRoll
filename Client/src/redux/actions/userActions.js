@@ -9,7 +9,7 @@ export const userLogin = (reqObj) => async (dispatch) => {
     console.log(reqObj);
 
     const response = await axios.post(
-      `${API_BASE_URL}/api/users/login`,
+      `${API_BASE_URL}api/users/login`,
       reqObj
     );
     
@@ -39,7 +39,7 @@ export const userRegister = (reqObj) => async (dispatch) => {
 
   try {
     const response = await axios.post(
-      `${API_BASE_URL}/api/users/register`,
+      `${API_BASE_URL}api/users/register`,
       reqObj
     );
     message.success("Registration successfull");
