@@ -1,4 +1,4 @@
-# Rent & ROll
+# Rent & Roll
 
 __________________________________
 A project that has 3 types of users who can use the webapp to book cars on hourly basis.
